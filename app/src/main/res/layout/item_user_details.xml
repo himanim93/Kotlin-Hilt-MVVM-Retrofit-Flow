@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin"
+    android:paddingEnd="@dimen/activity_horizontal_margin">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUser"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/grey_600"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:maxLines="2"
+        android:textAppearance="@style/Text.SemiBold.16"
+        android:textColor="@color/blue"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintStart_toEndOf="@+id/imgUser"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Justine Mason" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtUserGitUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="7dp"
+        android:textAppearance="@style/Text.Regular.14"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toEndOf="@+id/imgUser"
+        app:layout_constraintTop_toBottomOf="@+id/txtUserName"
+        tools:text="Team" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

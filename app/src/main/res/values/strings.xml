@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Users</string>
+    <string name="something_wrong">Something went wrong. Please try again later.</string>
+    <string name="prompt_search">Search</string>
+    <string name="no_result_found">No Result Found</string>
+    <string name="no_internet">Could not connect to internet</string>
+</resources>
